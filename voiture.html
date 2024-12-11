@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Voitures</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/flex.css">
+
+
+</head>
+
+<body>
+    <header>
+        <ul class="flexible justify-content-space-evenly">
+            <li>
+                <a class="menu-text" href="index.html">Home</a>
+                <a class="menu-icon" href="index.html">
+                    <ion-icon size="large" name="home-outline"></ion-icon>
+                </a>
+
+            </li>
+            <li>
+                <a class="menu-text" href="voiture.html">Nos Voitures</a>
+                <a class="menu-icon" href="voiture.html">
+                    <ion-icon size="large" name="car-outline"></ion-icon>
+                </a>
+
+            </li>
+            <li>
+                <a class="menu-text" href="profil.html">Profil</a>
+                <a class="menu-icon" href="profil.html">
+                    <ion-icon size="large" name="person-outline"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="filter">
+            <input type="text" placeholder="Rechercher">
+        </div>
+        <!-- Liste des voitures -->
+        <div class="flexible flex-wrap justify-content-space-arround">
+            <div class="container ford mustang">
+                <h2>Ford Mustang</h2>
+                <img src="IMG/mustang.jpg" alt="Ford mustang noir">
+                <p>500 chevaux</p>
+                <h3>66 000 €</h3>
+                <a href="voirlavoiture.html">Voir la voiture</a>
+            </div>
+            <div class="container bugatti chyron">
+                <h2>Bugatti Chyron</h2>
+                <img src="IMG/buga.jpg" alt="Bugatti chiron noir">
+                <p>500 chevaux</p>
+                <h3> 800 000 €</h3>
+                <a href="voirlavoiture.html">Voir la voiture</a>
+            </div>
+            <div class="container rolls royce">
+                <h2>Rolls Royce</h2>
+                <img src="IMG/rolls.jpeg" alt="Rolls Royce Noir">
+                <p>2000 chevaux</p>
+                <h3>4 000 000 €</h3>
+                <a href="voirlavoiture.html">Voir la voiture</a>
+            </div>
+            <div class="container lamborghini urus">
+                <h2>Urus</h2>
+                <img src="IMG/urus.jpg" alt="Lamborghini urus jaune">
+                <p>700 chevaux</p>
+                <h3>500 000 €</h3>
+                <a href="voirlavoiture.html">Voir la voiture</a>
+            </div>
+            <div class="container ford mustang">
+                <h2>Ford Mustang</h2>
+                <img src="IMG/mustang.jpg" alt="Ford mustang noir">
+                <p>500 chevaux</p>
+                <h3>66 000 €</h3>
+                <a href="voirlavoiture.html">Voir la voiture</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Dayani Poty Mael</p>
+        <a id="lienParticulier" href="https://loca-motor.vercel.app/" target="_blank" rel="noopener noreferrer">Voir
+            l'agence</a>
+        <a href="mailto:230114@site.asty-moulin.be">230114@site.asty-moulin.be</a>
+
+    </footer>
+
+
+    <script>
+        const filtre = document.querySelector("input");
+        filtre.addEventListener("input", fn);
+        const voitures = document.getElementsByClassName('container');
+        console.log(voitures);
+
+        function fn(e) {
+            console.log(e.target.value.toLowerCase())
+            Array.prototype.forEach.call(voitures, function (voiture) {
+                console.log(voiture.className);
+                if (voiture.className.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1) {
+                    voiture.classList.remove('hidden')
+                } else {
+                    console.log('hidden')
+                    voiture.classList.add('hidden')
+                }
+            });
+        }
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

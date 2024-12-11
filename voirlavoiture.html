@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford Mustang</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/flex.css">
+
+</head>
+
+<body>
+    <header>
+        <ul class="flexible justify-content-space-evenly">
+            <li>
+                <a class="menu-text" href="index.html">Home</a>
+                <a class="menu-icon" href="index.html">
+                    <ion-icon size="large" name="home-outline"></ion-icon>
+                </a>
+
+            </li>
+            <li>
+                <a class="menu-text" href="voiture.html">Nos Voitures</a>
+                <a class="menu-icon" href="voiture.html">
+                    <ion-icon size="large" name="car-outline"></ion-icon>
+                </a>
+
+            </li>
+            <li>
+                <a class="menu-text" href="profil.html">Profil</a>
+                <a class="menu-icon" href="profil.html">
+                    <ion-icon size="large" name="person-outline"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <h1><span class="red-span">Details</span> de la voiture</h1>
+
+        <div class="flexible justify-content-space-evenly flex-wrap">
+            <div class="voiture-container">
+                <h2>Image de la voiture</h2>
+                <img id="img-voiture" src="IMG/mustang.jpg" alt="Ford Mustang Noir">
+            </div>
+            <div class="info-voiture">
+                <h2>Ford Mustang</h2>
+                <p>500 chevaux</p>
+                <h3>66 000 €</h3>
+                <p>M'envoyer un <a href="mailto:230114@site.asty-moulin.be">mail</a></p>
+            </div>
+        </div>
+
+        <div class="flexible justify-content-space-evenly flex-wrap">
+            <div class="description-container">
+                <h2>Description</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In explicabo magnam pariatur ea dicta,
+                    tempore
+                    corrupti optio, voluptatibus, doloremque cupiditate similique sapiente possimus officiis aliquam
+                    eligendi ad
+                    dolores cumque neque? Unde, ipsam porro sed earum rem adipisci itaque culpa ducimus quas, accusamus
+                    dolorum,
+                    necessitatibus tenetur praesentium blanditiis sunt. Aspernatur, dicta.</p>
+            </div>
+            <div>
+                <h2>Tableau d'information</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Informations</th>
+                            <th>Données</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Marque</td>
+                            <td>Ford Mustang</td>
+                        </tr>
+                        <tr>
+                            <td>Nombre de chevaux</td>
+                            <td>500
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Espace interieur</td>
+                            <td>15m²</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Options</td>
+                            <td>Coffre sport </td>
+                        </tr>
+
+                        <tr>
+                            <td>Interieur carbone
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Triple pot d'échappement</td>
+                        </tr>
+
+                        <tr>
+                            <td>Poids</td>
+                            <td>1700kg</td>
+                        </tr>
+                        <tr>
+                            <td>Killometrage</td>
+                            <td>500km</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="flexible justify-content-space-evenly flex-wrap">
+            <div>
+                <h2>
+                    Video de l'interieur
+                </h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dcHwTcNfaqA?si=Dqhfw-i2CWBpF-Zh"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div>
+                <h2>Map du bien</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5080.4769205851735!2d4.876214414834957!3d50.455284050210956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c199071d474ee1%3A0xab8cd5faa8a676b4!2sGarage%20D.A.N.%20sc!5e0!3m2!1sfr!2sbe!4v1696420857522!5m2!1sfr!2sbe"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div>
+            <label for="">Mail</label>
+            <input id="email" type="email">
+            <div class="senddiv">
+                <button><a href="mailto:230114@site.asty-moulin.be">Envoyer</a></button>
+                <img id="send" src="IMG/icons8-envoyer-50.png" alt="icon">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Dayani Poty Mael</p>
+        <a id="lienParticulier" href="https://loca-motor.vercel.app/" target="_blank" rel="noopener noreferrer">Voir
+            l'agence</a>
+        <a href="mailto:230114@site.asty-moulin.be">230114@site.asty-moulin.be</a>
+
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

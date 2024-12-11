@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Profile</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/flex.css">
+
+</head>
+
+<body>
+    <header>
+        <ul class="flexible justify-content-space-evenly">
+            <li>
+                <a class="menu-text" href="index.html">Home</a>
+                <a class="menu-icon" href="index.html">
+                    <ion-icon size="large" name="home-outline"></ion-icon>
+                </a>
+
+            </li>
+            <li>
+                <a class="menu-text" href="voiture.html">Nos Voitures</a>
+                <a class="menu-icon" href="voiture.html">
+                    <ion-icon size="large" name="car-outline"></ion-icon>
+                </a>
+
+            </li>
+            <li>
+                <a class="menu-text" href="profil.html">Profil</a>
+                <a class="menu-icon" href="profil.html">
+                    <ion-icon size="large" name="person-outline"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <h1> Mon profil</h1>
+
+        <ol>
+            <li>
+                <p>Nom</p>
+                <p>Dayani Poty</p>
+            </li>
+            <li>
+                <p>Prenom</p>
+                <p>Mael</p>
+            </li>
+            <li>
+                <p>Adresse Postale</p>
+                <p>Allée Saint-Vincent, 27</p>
+            </li>
+            <li>
+
+                <p>Photo de profile</p>
+                <div class="charge">
+                    <!-- <button class="btn-charge">Charger &#8595</button> -->
+                    <div class="cadre">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+                <img class="profile-pic" src="IMG/profile.png" alt="Photo de profile">
+            </li>
+        </ol>
+
+        <div>
+            <label for="">Message</label>
+            <input id="email" type="email">
+            <div class="senddiv">
+                <button><a href="mailto:230114@site.asty-moulin.be">Envoyer</a></button>
+                <img id="send" src="IMG/icons8-envoyer-50.png" alt="icon">
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p class="scale">Dayani Poty Mael</p>
+        <p class="rotation">Rotation</p>
+        <p class="translation">Translation</p>
+        <a id="lienParticulier" href="https://loca-motor.vercel.app/" target="_blank" rel="noopener noreferrer">Voir
+            l'agence</a>
+        <a href="mailto:230114@site.asty-moulin.be">230114@site.asty-moulin.be</a>
+
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

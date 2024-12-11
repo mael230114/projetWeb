@@ -1,0 +1,438 @@
+/* Css pour les pc */
+
+body {
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header ul {
+    /* background-color: red; */
+    margin: 0;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    color: red;
+    font-size: 1.3em;
+    font-weight: bold;
+    transition: all .3s;
+
+}
+
+header ul li a:hover {
+    text-shadow: 1px 2px rgba(128, 128, 128, 0.445);
+}
+
+h1 {
+    color: black;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    font-size: 1.7em;
+}
+
+.container {
+    width: 300px;
+    padding: 50px 10px;
+    box-shadow: 1px 4px .4em rgba(128, 128, 128, 0.432);
+    border-radius: 15px;
+    margin: 50px 0;
+    /* border: 1px solid red; */
+    text-align: center;
+    transition: all .3s;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+.container img {
+    width: 90%;
+    border-radius: 15px;
+}
+
+.container p {
+    text-align: center;
+
+}
+
+.red-span {
+    color: red;
+}
+
+
+
+div a {
+    color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all .3s;
+    /* box-shadow: 3px 3px .4em grey; */
+}
+
+div a:hover {
+    color: white;
+    background-color: red;
+    /* box-shadow: 3px 3px .4em grey; */
+
+}
+
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 7px;
+
+}
+
+img {
+    width: 500px;
+}
+
+p {
+    line-height: 30px;
+    text-align: justify;
+}
+
+footer a {
+    color: red;
+    transition: all .3s;
+}
+
+footer a:hover {
+    color: blue;
+    font-size: large;
+}
+
+.profile-pic {
+    width: 0;
+    animation-name: img;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#lienParticulier {
+    color: blue;
+    padding: 4px;
+}
+
+
+
+footer {
+    background-color: rgba(175, 175, 175, 0.192);
+    padding: 5px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    padding: 5px;
+    font-size: 12px;
+    border-width: 1px;
+    margin-left: 30px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgba(66, 66, 66, .75);
+}
+
+.filter input:focus {
+    outline: none;
+
+}
+
+.scale,
+.translation {
+    transition-duration: 0.5s;
+}
+
+
+.scale:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.rotation {
+    display: inline-block;
+}
+
+.rotation:hover {
+    transform: rotate(360deg);
+    transition: transform 0.5s;
+
+}
+
+.translation:hover {
+    cursor: pointer;
+    transform: translate(50px);
+}
+
+#send {
+    width: 30px;
+
+}
+
+#email {
+    border-color: red;
+    color: grey;
+
+}
+
+#email:focus {
+    outline: blue;
+    border-color: blue;
+}
+
+/* #email:invalid {
+    background-color: red;
+    animation-name: shake;
+    animation-duration: .2s ;
+} */
+
+/* #email:focus:invalid {
+    background-color: red;
+
+    animation-name: shake;
+    animation-duration: .2s ;
+} */
+#email:not(:focus):invalid {
+    background-color: red;
+    animation-name: shake;
+    animation-duration: .2s ;
+}
+@keyframes shake {
+    0% {
+      margin-left: 0rem;
+    }
+    25% {
+      margin-left: 0.5rem;
+    }
+    75% {
+      margin-left: -0.5rem;
+    }
+    100% {
+      margin-left: 0rem;
+    }
+  }
+
+.senddiv {}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: red;
+    border-radius: 30px;
+    padding: 7px;
+    transition: all .3s;
+}
+
+button:hover {
+    transform: scale(1.3);
+}
+
+#send {
+    transition: all .3s;
+}
+
+button:hover~#send {
+
+    transform: translate(130px);
+}
+
+button a {
+    color: white;
+}
+
+.cadre {
+    border: 1px solid black;
+    height: 25px;
+    animation-name: cadre;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: green;
+    margin: 2px;
+    /* /* transform: scaleX(0); */
+    transform-origin: 0%;
+    animation-name: charge;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes charge {
+    0% {
+        transform: scaleX(0);
+    }
+
+    20% {
+        background-color: blue;
+        transform: scaleX(0.2);
+    }
+
+    40% {
+        background-color: orange;
+        transform: scaleX(0.4);
+    }
+
+    60% {
+        background-color: red;
+        transform: scaleX(0.6);
+    }
+
+    80% {
+        background-color: yellow;
+        transform: scaleX(0.8);
+    }
+
+    99% {
+        transform: scaleX(1);
+        background-color: green;
+    }
+
+    to {
+        display: none;
+    }
+
+}
+
+@keyframes img {
+    from {
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        opacity: 100;
+        width: 200px;
+    }
+    
+}
+
+@keyframes cadre {
+    from {
+    }
+    to {
+        display: none;
+    }
+    
+}
+
+/* .btn-charge:active {
+    background-color: blue;
+}
+.btn-charge:active + .cadre > .progress-bar {
+    transform: scaleX(1);
+    transition: all 2s;
+}
+ */
+
+
+@media screen and (max-width: 700px)  {
+    .filter input {
+        width: 90%;
+        height: 30px;
+        margin: 0 20px;
+        font-size: 1.1em;
+        padding: 10px 0 10px 10px;
+        border-radius: 30px;
+    }
+    
+    ul li a.menu-text {
+        display: none;
+    }
+    #img-voiture {
+        width: 100%;
+        /* margin: 0 auto; */
+        border-radius: 20px;
+    }
+    .voiture-container {
+        width: 80%;
+    }
+    .voiture-container h2 {
+        display: none;
+    }
+    .info-voiture p, .info-voiture {
+        text-align: center;
+    }
+
+    .description-container {
+        text-align: center;
+        width: 70%;
+        margin-right: 30px;
+    }
+
+    #email {
+        width: 90%;
+        height: 30px;
+        margin: 10px 20px;
+        font-size: 1.1em;
+        padding: 10px 0 10px 10px;
+        border-radius: 30px;
+    }
+
+    button {
+        margin-left: 20px;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 700px)  {
+    ul li a.menu-icon {
+        display: none;
+    }
+}
+
+.info-voiture {
+    margin: 0 50px;
+}
+
+.description-container {
+    /* width: 40%; */
+    max-width: 50%;
+    margin-right: 50px;
+}
